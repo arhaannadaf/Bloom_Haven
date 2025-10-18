@@ -1,0 +1,73 @@
+<?php
+session_start();
+
+// Redirect to login if user is not logged in
+if (!isset($_SESSION['username'])) {
+    header("Location: ..log.html"); // Redirect to log.html
+    exit();
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIFA ENTERPRISE</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>SIFA ENTERPRISE</h1>
+        <p>"Pure Goodness, Naturally Nourishing - The Power of Bananas in Every spoon!"</p>
+        <p>शुद्धता आणि पौष्टिकता  प्रत्येक चमच्यात केळ्यांची ताकद!"</p>
+        <nav>
+            <ul>
+                <li><a href="#catalog">Product Catalog</a></li>
+                <li><a href="cart.html">Basket </a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="../logout.php">Logout</a></li> <!-- Logout Link -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Catalog Section -->
+    <section id="catalog">
+        <h2>Our Product</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="photo4.jpg" alt="Laptop">
+            </div>
+            <div class="product">
+                <img src="photo1.jpg" alt="Wireless Earbuds">
+            </div>
+            <div class="product">
+                <img src="photo2.jpg" alt="Banana Powder">
+            </div>
+            <div class="product">
+                <img src="photo3.jpg" alt="Smartwatch">
+                <h3>Banana Powder</h3>
+                <p>Price: 800 </p>
+                <button onclick="selectProduct('Banana Powder',800 )">Order Now</button>
+            </div>
+            <a href="cart.html">View cart</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Proprietor:</strong> Maherun Badashah Jamadar</p>
+        <p><strong>Address:</strong> Near Dr. Salim Mujawar Clinic, Mannat Bunglow, Ahilyanagar, Sangli</p>
+        <p><strong>Phone:</strong> <a href="tel:+919511877859">9511877859</a>, <a href="tel:+919175887605">9175887605</a></p>
+        <p><strong>Email:</strong> <a href="mailto:maherunjamadar6@gmail.com">maherunjamadar6@gmail.com</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,28 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 5px 0;
+    }
+
+    #catalog {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr; /* Full-width items on small screens */
+    }
+
+    .product {
+        width: 90%;
+        margin: auto;
+    }
+
+    #order-form {
+        width:95%;
+      
+}
+}

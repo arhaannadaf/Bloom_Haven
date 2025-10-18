@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Haven </title>
+    <link rel="stylesheet" href="BloomHaven.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="BloomHaven.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="bloomhaven.png" class="logo">
+            <input type="text" class="search-bar" placeholder="Search for products, brands and more">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#catalog">Products</a></li>
+                    <li><a href="#banner2">Offers</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li id="loginLink"><a href="log.html">Login</a></li>
+<li id="userIcon" style="display: none;">
+    <img src="bloomhaven.png" alt="User Icon" class="user-icon">
+</li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="banner2" class="banner">
+        <div class="banner1">
+            <img src="photo2.jpg" alt="Banana Powder">
+            <div class="banner-content">
+                <h2>Banana powder 1600gm </h2>
+                <p class="price"><span>Price: </span>&#8377;1399<span class="old-price">&#8377;1799</span></p>
+                <p class="details">Rich in potassium, fiber, and essential vitamins, banana powder supports digestion, boosts energy <br> #1 Selling protein Powder in the segment</p>
+            </div>
+            <div class="sale-badge">Bloom Haven 2025 sale</div>
+        </div>
+    </section>
+    <section id="catalog" class="products-grid">
+        <div class="product">
+            <img src="photo4.jpg" alt="Laptop">
+            <p>400gm Banana Powder <p>Price: &#8377;420 </p><button onclick="selectProduct('Banana Powder 400gm',420 )">Order Now</button></p>
+        </div>
+        <div class="product">
+            <img src="jacket.webp" alt="Wireless Earbuds">
+            <p>Men's  jacket - <p>Price: &#8377; 1200</p><button onclick="selectProduct(`Men's jacket` ,1200 )">Order Now</button></p>
+        </div>
+        <div class="product">
+            <img src="photo2.jpg" alt="Banana Powder">
+            <p>Banana Powder 800gm -<p>Price: &#8377; 880</p><button onclick="selectProduct('Banana Powder 800gm',880 )">Order Now</button></p>
+        </div>
+        <div class="product">
+            <img src="watch.webp" alt="Smartwatch">
+            <p>Smartwatch -<p>Price: &#8377;999</p><button onclick="selectProduct('Smartwatch',999 )">Order Now</button></p>
+        </div>
+        <div class="product">
+            <img src="checks_shirt.webp" alt="Mens_shirt">
+            <p>Mens_shirt - <p>Price: &#8377;540</p><button onclick="selectProduct('Mens_shirt',540 )">Order Now</button></p>
+        </div>
+        <div class="product">
+            <img src="mobile_adapter.webp" alt="power_bank">
+            <p>10000mH Power Bank - <p>Price: &#8377;2999</p><button onclick="selectProduct('mobile_adapter',2999 )">Order Now</button></p>
+        </div>
+        <div class="product">
+            <img src="perfume.jpg" alt="Bleu Chanel" style="height: 170px;">
+            <p>Luxury perfume - <p>Price: &#8377;1555</p><button onclick="selectProduct('Luxury perfume',1555)">Order Now</button></p>
+        </div>
+    </section>
+    <footer id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Proprietor:</strong> Sagar Bansode</p>
+            <p><strong>Address:</strong> shivaji chowk near udyaog bhawan Latur- 413512</p>
+            <p><strong>Phone:</strong> <a href="tel:+919511877859">9511877859</a>, <a href="tel:+919175887605">9175887605</a></p>
+            <p><strong>Email:</strong> <a href="mailto:bloomhaven@gmail.com">bloomhaven@gmail.com</a></p>
+        <p>&copy; Bloom Haven. All rights reserved.</p>
+    </footer>
+    <script src="BloomHaven.js"></script>
+</body>
+</html>
